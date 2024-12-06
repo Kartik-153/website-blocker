@@ -162,9 +162,9 @@ cython_debug/
 #.idea/
 
 # sqlite3 filw 
-database.sqlite
+# database.sqlite
 
 __init__.py
 
 # prod directory in tensor
-prod/
+# prod/
