@@ -122,8 +122,8 @@ testProductive = ["https://www.simplilearn.com",
  
 
 
-# print(len(testProductive))
-# print(len(trainProductive))
+print(len(testProductive))
+print(len(trainProductive))
 
-# capture_screenshots(trainProductive, "./data/train/productive", "productive")
-# capture_screenshots(testProductive, "./data/test/productive", "productive")
+capture_screenshots(trainProductive, "./data/train/productive", "productive")
+capture_screenshots(testProductive, "./data/test/productive", "productive")
