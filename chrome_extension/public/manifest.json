@@ -1,10 +1,20 @@
 {
-    "manifest_version": 3,
-    "name": "React Chrome Extension",
-    "version": "1.0.0",
-    "description": "A simple React app as a Chrome extension",
-    "action": {
-      "default_popup": "index.html"
-    },
-    "permissions": []
-  }
+  "manifest_version": 3,
+  "name": "¯\\(ツ)/¯ Blocker",
+  "description": "Blocks all unproductive websites using computer vision and machine learning.",
+  "version": "1.0",
+  "permissions": [
+    "webNavigation",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "converted_from_user_script": true,
+  "action": {
+    "default_popup": "index.html"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:8000/check-productivity"
+  ]
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7e9c4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    align-items: center; /* Center items vertically */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 850px;
+    height: 400px;
+    text-align: center;
+    gap: 20px; /* Add spacing between GIF and text */
+}
+
+.container-text {
+    flex: 1; /* Allow text to take remaining space */
+    padding-left: 20px;
+}
+
+.description {
+    margin: 0 0 20px 0;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.vanish img {
+    display: block;
+    padding-left: 20px;
+}
+
+.footer {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #0d0c0c;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
