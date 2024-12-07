@@ -2,6 +2,9 @@ import tensorflow as tf
 import numpy as np
 from selenium import webdriver
 import hashlib
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 class ProductivityModel:
     def __init__(self, model_path: str):
@@ -19,6 +22,7 @@ class ProductivityModel:
     def take_screenshot(self, url: str) -> str:
         driver = webdriver.Chrome()
         driver.get(url)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         hashed_url = hashlib.sha256(url.encode()).hexdigest()
         image_path = "tensor/dataset/prod/" + hashed_url + ".png"
         driver.save_screenshot(image_path)
